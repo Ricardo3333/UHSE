@@ -1,0 +1,159 @@
+*{
+
+    margin: 0;
+   
+}
+
+.mae{
+
+    background-color: rgba(201, 200, 200, 0.705);
+}
+
+
+ul{ /* edição da lista ordenada no header */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+
+    
+}
+
+img{ /* edição imagem */
+
+    
+    width: 100%;
+    height: 550px;
+    
+    
+ 
+}
+
+
+.menu{ /* edição do menu header (ul junto com li) */
+    position: absolute;
+}
+
+.menu li{ /* edição da li no header */
+
+    padding: 0px 10px;
+}
+
+
+.menu .itens-menu{  /* edição dos texto do menu (home, produtos etc) */
+    
+    color: #fff;
+    display: flex;
+    font-size: 22px;
+    font-family: 'Consolas';
+    text-decoration: none;
+    
+    
+}
+
+.aumentar:Hover{ /*  edição da cor do menu   */
+    font-size: 23px;
+    color: rgb(238, 0, 0);
+
+}
+
+
+.menu .bolinha{ /* edição da bolinha da ul*/
+    color: #fff;
+    display: flex;
+    
+}
+
+.imagem_inicial{ /*  edição de tuod que ta na div imagem_inicial  */
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products{ /*  tamanha das imagens no carrossel  */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.imagem_inicial img{ /* todoas imagem que está dentro da div imagem_inicial */
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+
+.product-single{ /*  tamanha das imagens no carrossel  */
+    height: 350px;
+}
+
+
+.imagem_inicial h2{  /* texto que fica em baixo das imagens do carrossel */ 
+    color: #7a195a;;
+    text-align: center;
+    font-family: 'Consolas';
+}
+
+.imagem_segunda{
+
+ margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.imagem_segunda h2{
+    
+     color: #7a195a;;
+    text-align: center;
+    font-family: 'Consolas';
+
+}
+
+.imagem_segunda img { /* todoas imagem que está dentro da div imagem_inicial */
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+
+.texto-inicial h1{
+
+    color: white;
+    font-family: 'Consolas';
+    text-align: center;
+    padding: 8px 0;
+
+}
+
+
+.texto-inicial h2{
+
+    color:white ;
+    font-family: 'Consolas';
+    text-align: center;
+    padding: 5px 0;
+
+}
+.texto-inicial{
+    background-color: #7a195a;
+    width: 50%;
+    height: 90px;
+    margin: 20px auto;
+    padding: 10px 0;
+    border-radius: 100px;
+
+}
+/*começo da estilização dos contatos*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 30px auto;
+    gap: 15px;
+}
