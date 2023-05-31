@@ -1,6 +1,6 @@
 
 import '../assets/index.css';
-import home from '../assets/todas.png';
+
 import anel from '../assets/imagem_home/anel.png'
 import anel_p from '../assets/imagem_home/anel_p.png'
 import capa from '../assets/imagem_home/capa.png'
@@ -14,13 +14,18 @@ import gel from '../assets/imagem_segunda/gel.png'
 import kmede from '../assets/imagem_segunda/kmede.png'
 import kuloco from '../assets/imagem_segunda/kuloco.png'
 import lubri from '../assets/imagem_segunda/lubri.png'
-import pimen from '../assets/imagem_segunda/pimen.png'  
+import pimen from '../assets/imagem_segunda/pimen.png'
 import pomada from '../assets/imagem_segunda/pomada.png'
 import touro from '../assets/imagem_segunda/touro.png'
 import vaca from '../assets/imagem_segunda/vaca.png'
+import silene from '../assets/imagem_home/silene.gif'
 
 
 import Carousel from 'react-material-ui-carousel'
+import { Button, TextField } from '@mui/material';
+import Footer from '../components/footer/Footer';
+import Banner from '../components/banner/Banner';
+import CardImage from '../components/cardImage/CardImage';
 
 
 
@@ -29,237 +34,119 @@ function Home() {
 
         <>
 
+            <div className='mae'>
 
-            
+                <Banner
+
+                />
+                <div className='silene'>
+                    <img src={silene} />
+                </div>
+
+                <div className='texto-inicial'>
+
+                    <h1>
+
+                        UHSE!
+
+                    </h1>
 
 
-        <div className='mae'>
+                    <h2>
 
-            <div>
+                        Seu SEXY-SHOP virtual!
+                    </h2>
 
-                <img src={home} />
+                </div>
+
+
+                <div className='imagem_inicial'>
+
+                    <Carousel className='corrosel'>
+
+                        <div className='products'>
+                            <CardImage image={anel} title="Anel Peniano" />
+                            <CardImage image={anel_p} title="Anel Vibrador" />
+                            <CardImage image={capa} title="Capa Penina" />
+                            <CardImage image={mini_vibrador} title="Mini Vibrador" />
+                        </div>
+
+                        <div className='products'>
+                            <CardImage image={penis} title="Penis de Borracha" />
+                            <CardImage image={vibra} title="Vibrador" />
+                            <CardImage image={vagina} title="Vagina de Borracha" />
+                            <CardImage image={kit} title="Kit Intimo" />
+                        </div>
+
+                    </Carousel>
+
+                </div>
+
+                {/* -------------------------------------------------- */}
+
+                <div className='imagem_segunda'>
+
+                    <Carousel className='corrosel'>
+
+                        <div className='products'>
+                            <CardImage image={touro} title="Tesão de Touro" />
+                            <CardImage image={vaca} title="Tesão de Vaca" />
+                            <CardImage image={pomada} title="Pomada Senssibilizante" />
+                            <CardImage image={pimen} title="Gel de Pimenta" />
+                        </div>
+
+                        <div className='products'>
+                            <CardImage image={lubri} title="Lubrificante de Morango" />
+                            <CardImage image={kuloco} title="Kuloco Gel" />
+                            <CardImage image={kmede} title="Lubrificante" />
+                            <CardImage image={gel} title="Gel Íntimo" />
+                        </div>
+
+                    </Carousel>
+
+
+
+
+                </div>
+
 
             </div>
 
 
 
-            <div className='texto-inicial'>  
-            
-            <h1>
-
-                    Bem vindo a UHSE!  
-
-            </h1>
-
-                
-            <h2>
-
-                Seu Sexy-Shop virtual!
-            </h2>
-
-            </div>
 
 
-            <div className='imagem_inicial'>
-
-                <Carousel className='corrosel'>
-
-                    <div className='products'>
-
-                        <div className='product-single'>
-
-
-                            <img src={anel} />
-
-                            <div>
-                                <h2>  Anel Peniano </h2>
-                            </div>
-                        </div>
-
-
-                        <div className='product-single'>
-
-                            <img src={anel_p} />
-                            <div>
-                                <h2> Anel Vibrador </h2>
-                            </div>
-                        </div>
+            <br /><br />
 
 
 
-                        <div className='product-single'>
 
-                            <img src={capa} />
+            <div className='linha'>
 
-                            <div>
-                                <h2> Capa Penina </h2>
-                            </div>
+                <hr />
+                <div className='final'>
 
-
-                        </div>
-
-                        <div className='product-single'>
-                            <img src={mini_vibrador} />
-                            <div>
-                                <h2>Mini Vibrador</h2>
-                            </div>
+                    <div className='novidades'>
 
 
-                        </div>
+
+                        <h2>  Receba nossas novidades em primeira mão. </h2>
+
+                        <TextField id="outlined-basic" label="Nome" variant="outlined" />
+                        <TextField id="outlined-basic" label="E-mail" variant="outlined" />
+
+
+                        <Button variant="contained">enviar</Button>
+
                     </div>
 
-
-
-
-                    <div className='products'>
-
-                        <div className='product-single'>
-
-                            <img src={penis} />
-
-                            <div>
-                                <h2>Penis de Borracha</h2>
-                            </div>
-                        </div>
-                        <div className='product-single'>
-
-                            <img src={vibra} />
-                            <div>
-                                <h2>Vibrador</h2>
-                            </div>
-                        </div>
-                        <div className='product-single'>
-
-                            <img src={vagina} />
-                            <div>
-                                <h2>Vagina de Borracha</h2>
-                            </div>
-                        </div>
-                        <div className='product-single'>
-                            <img src={kit} />
-                            <div>
-                                <h2>Kit Intimo</h2>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </Carousel>
-
-
-
+                </div>
 
             </div>
 
+            <hr />
 
-
-            {/* -------------------------------------------------- */}
-
-
-            <div className='imagem_segunda'>
-
-                <Carousel className='corrosel'>
-
-                    <div className='products'>
-
-                        <div className='product-single'>
-
-
-                            <img src={touro} />
-
-                            <div>
-                                <h2>  Tesão de Touro </h2>
-                            </div>
-                        </div>
-
-
-                        <div className='product-single'>
-
-                            <img src={vaca} />
-                            <div>
-                                <h2> Tesão de Vaca </h2>
-                            </div>
-                        </div>
-
-
-
-                        <div className='product-single'>
-
-                            <img src={pomada} />
-
-                            <div>
-                                <h2> Pomada Senssibilizante</h2>
-                            </div>
-
-
-                        </div>
-
-                        <div className='product-single'>
-                            <img src={pimen} />
-                            <div>
-                                <h2>Gel de Pimenta</h2>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-
-
-                    <div className='products'>
-
-                        <div className='product-single'>
-
-                            <img src={lubri} />
-
-                            <div>
-                                <h2>Lubrificante de Morango</h2>
-                            </div>
-                        </div>
-
-
-                        <div className='product-single'>
-
-                            <img src={kuloco} />
-                            <div>
-                                <h2>Kuloco Gel</h2>
-                            </div>
-                        </div>
-
-
-                        <div className='product-single'>
-
-                            <img src={kmede} />
-                            <div>
-                                <h2>Lubrificante</h2>
-                            </div>
-                        </div>
-                        <div className='product-single'>
-                            <img src={gel} />
-                            <div>
-                                <h2>Gel Íntimo</h2>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </Carousel>
-
-
-
-
-            </div>
-
-
-            </div>
-
-
-
-
-
+            <Footer />
 
         </>
 
