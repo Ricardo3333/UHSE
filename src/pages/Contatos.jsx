@@ -9,6 +9,7 @@ import { Button, TextField } from '@mui/material';
 import email from '../assets/imagem_contatos/email.jpeg';
 import Footer from '../components/footer/Footer';
 import Banner from '../components/banner/Banner';
+import FormContato from '../components/form/Form';
 
 
 
@@ -22,7 +23,7 @@ function Contatos() {
     <>
         <Banner/>
 
-        
+
       <div className='logo'>
 
         <div className='align-contatos'>
@@ -55,23 +56,11 @@ function Contatos() {
 
       <div className='reta'>
         <hr />
-
-
-
         <div className='ideia'>
 
           <div className='volta'>
 
-            <div className='form'>
-
-              <h2> Entre em contato com a nossa equipe </h2>
-              <TextField id="outlined-basic" label="Nome" variant="outlined" />
-              <TextField id="outlined-basic" label="E-mail" variant="outlined" />
-              <TextField id="outlined-basic" label="Mensagem" variant="outlined" />
-
-              <Button variant="contained">Enviar</Button>
-
-            </div>
+          <FormContato/>
 
           </div>
 

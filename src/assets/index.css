@@ -154,13 +154,7 @@ img{ /* edição imagem */
 }
 /*começo da estilização dos contatos*/
 
-.form{
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 30px auto;
-    gap: 15px;
-}
+
 
 .novidades{
 
@@ -202,8 +196,6 @@ img{ /* edição imagem */
 }
 
 .logo{
-
-    
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
@@ -242,7 +234,10 @@ img{ /* edição imagem */
 
 
 .reta{
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #e9e6e6;
     height: 500px;
     
@@ -257,7 +252,6 @@ img{ /* edição imagem */
 .form{
    
     width: 700px;
-    height: 200px;
     margin: 40px auto;
     font-family: 'Consolas';
     
@@ -266,10 +260,9 @@ img{ /* edição imagem */
 
 
 .volta{
+    padding: 30px;
     background-color: #b92086;
     border-radius: 30px;
-    height: 400px;
-    width: 850px;
     display: flex;
     justify-content: center;
     margin: 40px auto;
@@ -334,4 +327,41 @@ img{ /* edição imagem */
 .align-contatos img{
     width: 300px;
     height: 280px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo{
+        flex-direction: column;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .reta{
+        padding: 30px;
+    }
+
+    .mae-uhse{
+        flex-direction: column;
+    }
+
+    .products{
+        flex-direction: column;
+    }
+    .product-single {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .texto-inicial{
+        width: 100%;
+    }
+
+    .box-texto-inicial{
+        padding: 10px;
+    }
 }

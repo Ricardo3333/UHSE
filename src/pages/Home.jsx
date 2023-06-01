@@ -26,6 +26,7 @@ import { Button, TextField } from '@mui/material';
 import Footer from '../components/footer/Footer';
 import Banner from '../components/banner/Banner';
 import CardImage from '../components/cardImage/CardImage';
+import FormContato from '../components/form/Form';
 
 
 
@@ -43,6 +44,8 @@ function Home() {
                     <img src={silene} />
                 </div>
 
+                <div className='box-texto-inicial'>
+
                 <div className='texto-inicial'>
 
                     <h1>
@@ -57,6 +60,7 @@ function Home() {
                         Seu SEXY-SHOP virtual!
                     </h2>
 
+                </div>
                 </div>
 
 
@@ -121,25 +125,16 @@ function Home() {
 
 
 
-            <div className='linha'>
+            <div className='reta'>
 
                 <hr />
-                <div className='final'>
+                <div className='ideia'>
 
-                    <div className='novidades'>
+                    <div className='volta'>
 
-
-
-                        <h2>  Receba nossas novidades em primeira mão. </h2>
-
-                        <TextField id="outlined-basic" label="Nome" variant="outlined" />
-                        <TextField id="outlined-basic" label="E-mail" variant="outlined" />
-
-
-                        <Button variant="contained">enviar</Button>
+                        <FormContato />
 
                     </div>
-
                 </div>
 
             </div>
